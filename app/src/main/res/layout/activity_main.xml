@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/backGround"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logo_ipost"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/backGround"
+        app:layout_constraintEnd_toEndOf="@+id/backGround"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/backGround"
+        app:layout_constraintTop_toTopOf="@+id/backGround"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/recipient1"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toTopOf="@+id/recipientName1"
+        app:layout_constraintEnd_toStartOf="@+id/recipient2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        android:contentDescription="@string/todo1" />
+
+    <TextView
+        android:id="@+id/recipientName1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="41dp"
+        android:layout_weight="0.5"
+        android:text="@string/address1"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/recipient3"
+        app:layout_constraintEnd_toStartOf="@+id/recipientName2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/recipient2"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toTopOf="@+id/recipientName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo2" />
+
+    <TextView
+        android:id="@+id/recipientName2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="315dp"
+        android:layout_weight="0.5"
+        android:text="@string/address2"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/recipient4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/recipient3"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toTopOf="@+id/recipientName3"
+        app:layout_constraintEnd_toStartOf="@+id/recipient4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/todo3" />
+
+    <TextView
+        android:id="@+id/recipientName3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="232dp"
+        android:layout_weight="0.5"
+        android:text="@string/address3"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recipientName4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/recipient4"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toTopOf="@+id/recipientName4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/todo4" />
+
+    <TextView
+        android:id="@+id/recipientName4"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="232dp"
+        android:layout_weight="0.5"
+        android:text="@string/address4"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/choose_please"
+        android:layout_width="271dp"
+        android:layout_height="117dp"
+        android:layout_gravity="center"
+        android:text="@string/choose"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/choices1"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/choices1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recipient1"
+        app:layout_constraintStart_toStartOf="@+id/recipient1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

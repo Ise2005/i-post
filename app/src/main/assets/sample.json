@@ -1,0 +1,24 @@
+{
+  "students": [
+    {
+      "name": "佐藤",
+      "no": 1,
+      "height-weight": [170,60],
+      "score": {
+        "testA": 70,
+        "testB": 80,
+        "testC": 90
+      }
+    },
+    {
+      "name": "山田",
+      "no": 2,
+      "height-weight": [180,80],
+      "score": {
+        "testA": 82,
+        "testB": 85,
+        "testC": 87
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">I-post</string>
+    <string name="name">I-post</string>
+    <string name="address1">・宛先1</string>
+    <string name="address2">・宛先2</string>
+    <string name="address3">・宛先3</string>
+    <string name="address4">・宛先4</string>
+    <string name="choose">\宛先を選択しましょう/</string>
+    <string name="back">戻る</string>
+    <string name="go">メッセージを入力しましょう</string>
+    <string name="send">送る</string>
+    <string name="todo4">連絡先4</string>
+    <string name="todo1">連絡先1</string>
+    <string name="todo2">連絡先2</string>
+    <string name="todo3">連絡先3</string>
+    <string name="todo">ipostのロゴ</string>
+    <string name="nameSetup">ユーザ設定画面</string>
+    <string name="input">相手の名前</string>
+    <string name="ok">決定</string>
+    <string name="recipient">連絡先1</string>
+
+    <string-array name="choices1">
+        <item>写真を設定</item>
+        <item>相手の名前を設定</item>
+    </string-array>
+</resources>
