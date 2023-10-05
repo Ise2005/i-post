@@ -18,6 +18,7 @@
     <string name="input">相手の名前</string>
     <string name="ok">決定</string>
     <string name="recipient">連絡先1</string>
+    <string name="sendImage">送られてきた画像</string>
 
     <string-array name="choices1">
         <item>写真を設定</item>

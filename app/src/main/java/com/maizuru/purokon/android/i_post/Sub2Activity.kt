@@ -23,9 +23,11 @@ class Sub2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sub2)
 
-        val recyclerView: RecyclerView = findViewById(R.id.rireki2)
-
         val textList = mutableListOf<String>()
+
+        val recyclerView: RecyclerView = findViewById(R.id.rireki2)
+        val adapter = ItemAdapter(textList)
+
         /*val url = "https://ipost-server-eh2trxntfa-an.a.run.app/"
         getTask(url)*/
 
@@ -35,7 +37,7 @@ class Sub2Activity : AppCompatActivity() {
         send.setOnClickListener {
             val str = text2.text
             textList.add(str.toString())
-            recyclerView.adapter = RecyclerAdapter(textList)
+            recyclerView.adapter = adapter
             recyclerView.layoutManager = LinearLayoutManager(this)
             text2.setText("")
         }
@@ -94,7 +96,7 @@ class Sub2Activity : AppCompatActivity() {
             textList.add(messageArray.getString(i))
         }
 
-        rireki2.adapter = RecyclerAdapter(textList)
+        rireki2.adapter = ItemAdapter(textList)
         rireki2.layoutManager = LinearLayoutManager(this)
     }
 }
